@@ -1,0 +1,16 @@
+CREATE TABLE Person (
+id INTEGER NOT NULL,
+name TEXT NOT NULL,
+birthYear TEXT NOT NULL
+);
+
+selectAllPeople:
+SELECT * FROM Person;
+
+selectPersonById:
+SELECT * FROM Person
+WHERE id = ?;
+
+insertPerson:
+INSERT INTO Person(id, name, birthYear)
+VALUES(?, ?, ?);
